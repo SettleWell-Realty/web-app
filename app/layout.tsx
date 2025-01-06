@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Manrope } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 const manrope = Manrope({
 	subsets: ["latin"],
@@ -34,6 +35,9 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					{children}
+					<div className="fixed bottom-4 left-4 z-50">
+						<ModeToggle />
+					</div>
 					<Toaster />
 				</ThemeProvider>
 			</body>
