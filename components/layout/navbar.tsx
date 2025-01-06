@@ -15,7 +15,9 @@ export function Navbar() {
 						<div className="rounded-md bg-primary p-1.5 transition-colors group-hover:bg-primary/90 shadow-md">
 							<Brand.icon className="h-5 w-5 text-primary-foreground" />
 						</div>
-						<span className="font-medium text-lg">{Brand.name}</span>
+						<span className="font-medium text-lg hidden sm:block">
+							{Brand.name}
+						</span>
 					</Link>
 
 					<div className="flex items-center gap-4">

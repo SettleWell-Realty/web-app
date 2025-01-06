@@ -83,6 +83,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
 			toast({
 				title: "Message sent successfully!",
 				description: "We'll get back to you as soon as possible.",
+				variant: "brand",
 			});
 
 			setOpen(false);

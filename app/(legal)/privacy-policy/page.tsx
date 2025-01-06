@@ -30,98 +30,131 @@ export default function PrivacyPolicy() {
 								</p>
 							</div>
 
-							<h2>1. Information Collection</h2>
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-								<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
-									<h3 className="font-semibold mb-2">Personal Details</h3>
-									<ul className="text-sm text-muted-foreground list-none p-0 m-0">
-										<li>Contact information</li>
-										<li>Property preferences</li>
-										<li>Financial records</li>
-									</ul>
-								</div>
-								<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
-									<h3 className="font-semibold mb-2">Usage Data</h3>
-									<ul className="text-sm text-muted-foreground list-none p-0 m-0">
-										<li>Website analytics</li>
-										<li>Communication history</li>
-										<li>Service interactions</li>
-									</ul>
-								</div>
-							</div>
-
-							<h2>2. Data Protection Measures</h2>
-							<div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-								<div className="flex flex-col items-center text-center p-4">
-									<Shield className="h-8 w-8 text-brand mb-2" />
-									<p className="text-sm font-medium">Secure Storage</p>
-								</div>
-								<div className="flex flex-col items-center text-center p-4">
-									<Lock className="h-8 w-8 text-brand mb-2" />
-									<p className="text-sm font-medium">Encryption</p>
-								</div>
-								<div className="flex flex-col items-center text-center p-4">
-									<Users className="h-8 w-8 text-brand mb-2" />
-									<p className="text-sm font-medium">Access Control</p>
-								</div>
-								<div className="flex flex-col items-center text-center p-4">
-									<Bell className="h-8 w-8 text-brand mb-2" />
-									<p className="text-sm font-medium">Monitoring</p>
-								</div>
-							</div>
-
-							<h2>3. Information Usage</h2>
-							<p>
-								We use your information to provide and improve our real estate
-								and property management services, process transactions, and
-								communicate with you about your property needs.
-							</p>
-
-							<h2>4. Information Sharing</h2>
-							<div className="rounded-lg border p-4 my-6">
-								<p className="font-medium mb-3">
-									We share information only with:
-								</p>
-								<ul className="grid gap-2 text-sm text-muted-foreground">
-									<li>Property owners and tenants (as necessary)</li>
-									<li>Authorized service providers</li>
-									<li>Legal and regulatory authorities</li>
-								</ul>
-							</div>
-
-							<h2>5. Your Privacy Rights</h2>
-							<p>
-								You have the right to access, correct, or delete your personal
-								information. Contact us to exercise these rights.
-							</p>
-
-							<h2>6. Cookies and Tracking</h2>
-							<p>
-								Our website uses cookies and similar technologies to enhance
-								user experience and analyze website traffic.
-							</p>
-
-							{/* Contact Section */}
-							<div className="mt-12 rounded-lg bg-gradient-to-br from-brand to-brand/90 text-brand-foreground p-8">
-								<h2 className="text-xl font-semibold mb-4 text-brand-foreground">
-									Privacy Inquiries
-								</h2>
-								<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-									<div>
-										<p className="font-medium">Privacy Officer</p>
-										<p className="mt-2 text-brand-foreground/90">
-											{Brand.name}
-											<br />
-											{Brand.location.street}
-											<br />
-											{Brand.location.suite}
-											<br />
-											{Brand.location.city}, {Brand.location.state}{" "}
-											{Brand.location.zip}
-										</p>
+							<div className="space-y-12">
+								{/* Information Collection Section */}
+								<section className="space-y-6">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										1. Information Collection
+									</h2>
+									<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+										<div className="rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors">
+											<h3 className="text-lg font-semibold mb-3">
+												Personal Details
+											</h3>
+											<ul className="space-y-2 text-muted-foreground list-none p-0 m-0">
+												<li>Contact information</li>
+												<li>Property preferences</li>
+												<li>Financial records</li>
+											</ul>
+										</div>
+										<div className="rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors">
+											<h3 className="text-lg font-semibold mb-3">Usage Data</h3>
+											<ul className="space-y-2 text-muted-foreground list-none p-0 m-0">
+												<li>Website analytics</li>
+												<li>Communication history</li>
+												<li>Service interactions</li>
+											</ul>
+										</div>
 									</div>
-									<div>
+								</section>
+
+								{/* Data Protection Section */}
+								<section className="space-y-6">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										2. Data Protection Measures
+									</h2>
+									<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+										<div className="rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors flex flex-col items-center text-center">
+											<Shield className="h-8 w-8 text-brand mb-3" />
+											<p className="font-medium">Secure Storage</p>
+										</div>
+										<div className="rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors flex flex-col items-center text-center">
+											<Lock className="h-8 w-8 text-brand mb-3" />
+											<p className="font-medium">Encryption</p>
+										</div>
+										<div className="rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors flex flex-col items-center text-center">
+											<Users className="h-8 w-8 text-brand mb-3" />
+											<p className="font-medium">Access Control</p>
+										</div>
+										<div className="rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors flex flex-col items-center text-center">
+											<Bell className="h-8 w-8 text-brand mb-3" />
+											<p className="font-medium">Monitoring</p>
+										</div>
+									</div>
+								</section>
+
+								{/* Information Usage Section */}
+								<section className="space-y-4">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										3. Information Usage
+									</h2>
+									<p className="text-base leading-relaxed text-muted-foreground">
+										We use your information to provide and improve our real
+										estate and property management services, process
+										transactions, and communicate with you about your property
+										needs.
+									</p>
+								</section>
+
+								{/* Information Sharing Section */}
+								<section className="space-y-6">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										4. Information Sharing
+									</h2>
+									<div className="rounded-lg border bg-card p-6">
+										<p className="font-medium mb-4">
+											We share information only with:
+										</p>
+										<ul className="space-y-2 text-muted-foreground">
+											<li>Property owners and tenants (as necessary)</li>
+											<li>Authorized service providers</li>
+											<li>Legal and regulatory authorities</li>
+										</ul>
+									</div>
+								</section>
+
+								{/* Privacy Rights Section */}
+								<section className="space-y-4">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										5. Your Privacy Rights
+									</h2>
+									<p className="text-base leading-relaxed text-muted-foreground">
+										You have the right to access, correct, or delete your
+										personal information. Contact us to exercise these rights.
+									</p>
+								</section>
+
+								{/* Cookies Section */}
+								<section className="space-y-4">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										6. Cookies and Tracking
+									</h2>
+									<p className="text-base leading-relaxed text-muted-foreground">
+										Our website uses cookies and similar technologies to enhance
+										user experience and analyze website traffic.
+									</p>
+								</section>
+
+								{/* Contact Section */}
+								<div className="mt-16 rounded-lg bg-gradient-to-br from-brand to-brand/90 text-brand-foreground p-8">
+									<h2 className="text-xl font-semibold mb-6 text-brand-foreground">
+										Privacy Inquiries
+									</h2>
+									<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 										<div className="space-y-2">
+											<p className="font-medium">Privacy Officer</p>
+											<p className="text-brand-foreground/90">
+												{Brand.name}
+												<br />
+												{Brand.location.street}
+												<br />
+												{Brand.location.suite}
+												<br />
+												{Brand.location.city}, {Brand.location.state}{" "}
+												{Brand.location.zip}
+											</p>
+										</div>
+										<div className="space-y-3">
 											<p>
 												<span className="text-brand-foreground/75">
 													Phone:{" "}

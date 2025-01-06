@@ -41,63 +41,89 @@ export default function TermsOfService() {
 								</div>
 							</div>
 
-							<h2>1. Real Estate Services</h2>
-							<p>
-								Our brokerage provides property management and real estate
-								services in compliance with Colorado state laws and regulations.
-								All our agents are licensed professionals operating under{" "}
-								{Brand.legalName}.
-							</p>
+							<div className="space-y-12">
+								<section className="space-y-4">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										1. Real Estate Services
+									</h2>
+									<p className="text-base leading-relaxed text-muted-foreground">
+										Our brokerage provides property management and real estate
+										services in compliance with Colorado state laws and
+										regulations. All our agents are licensed professionals
+										operating under {Brand.legalName}.
+									</p>
+								</section>
 
-							<h2>2. Property Management Services</h2>
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-								<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
-									<h3 className="font-semibold mb-2">Property Marketing</h3>
-									<p className="text-sm text-muted-foreground">
-										Professional listing services and tenant screening
+								<section className="space-y-6">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										2. Property Management Services
+									</h2>
+									<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+										<div className="rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors">
+											<h3 className="text-lg font-semibold mb-3">
+												Property Marketing
+											</h3>
+											<p className="text-muted-foreground">
+												Professional listing services and tenant screening
+											</p>
+										</div>
+										<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
+											<h3 className="font-semibold mb-2">
+												Financial Management
+											</h3>
+											<p className="text-sm text-muted-foreground">
+												Rent collection and detailed reporting
+											</p>
+										</div>
+										<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
+											<h3 className="font-semibold mb-2">Maintenance</h3>
+											<p className="text-sm text-muted-foreground">
+												24/7 emergency response and coordination
+											</p>
+										</div>
+										<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
+											<h3 className="font-semibold mb-2">Legal Compliance</h3>
+											<p className="text-sm text-muted-foreground">
+												Documentation and regulatory adherence
+											</p>
+										</div>
+									</div>
+								</section>
+
+								<section className="space-y-4">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										3. Fair Housing Compliance
+									</h2>
+									<p className="text-base leading-relaxed text-muted-foreground">
+										We strictly adhere to Fair Housing laws and do not
+										discriminate based on race, color, religion, sex, handicap,
+										familial status, or national origin.
 									</p>
-								</div>
-								<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
-									<h3 className="font-semibold mb-2">Financial Management</h3>
-									<p className="text-sm text-muted-foreground">
-										Rent collection and detailed reporting
+								</section>
+
+								<section className="space-y-4">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										4. Fees and Payments
+									</h2>
+									<p className="text-base leading-relaxed text-muted-foreground">
+										Our fee structure is transparent and based on the services
+										provided. All fees will be clearly outlined in your
+										management agreement or service contract.
 									</p>
-								</div>
-								<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
-									<h3 className="font-semibold mb-2">Maintenance</h3>
-									<p className="text-sm text-muted-foreground">
-										24/7 emergency response and coordination
+								</section>
+
+								<section className="space-y-4">
+									<h2 className="text-2xl font-semibold tracking-tight border-b pb-2">
+										5. Limitation of Liability
+									</h2>
+									<p className="text-base leading-relaxed text-muted-foreground">
+										While we strive for excellence, {Brand.name} is not liable
+										for circumstances beyond our reasonable control.
 									</p>
-								</div>
-								<div className="rounded-lg border p-4 hover:bg-muted/50 transition-colors">
-									<h3 className="font-semibold mb-2">Legal Compliance</h3>
-									<p className="text-sm text-muted-foreground">
-										Documentation and regulatory adherence
-									</p>
-								</div>
+								</section>
 							</div>
 
-							<h2>3. Fair Housing Compliance</h2>
-							<p>
-								We strictly adhere to Fair Housing laws and do not discriminate
-								based on race, color, religion, sex, handicap, familial status,
-								or national origin.
-							</p>
-
-							<h2>4. Fees and Payments</h2>
-							<p>
-								Our fee structure is transparent and based on the services
-								provided. All fees will be clearly outlined in your management
-								agreement or service contract.
-							</p>
-
-							<h2>5. Limitation of Liability</h2>
-							<p>
-								While we strive for excellence, {Brand.name} is not liable for
-								circumstances beyond our reasonable control.
-							</p>
-
-							<div className="mt-12 rounded-lg bg-gradient-to-br from-brand to-brand/90 text-brand-foreground p-8">
+							<div className="mt-16 rounded-lg bg-gradient-to-br from-brand to-brand/90 text-brand-foreground p-8">
 								<h2 className="text-xl font-semibold mb-4 text-brand-foreground">
 									Contact Information
 								</h2>
