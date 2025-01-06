@@ -1,4 +1,4 @@
-<img src="/SettleWell-Realty-Logo.svg" alt="SettleWell Realty Logo" width="200"/>
+<img src="public/SettleWell-Realty-Logo.svg" alt="SettleWell Realty Logo" width="200"/>
 
 # SettleWell Realty Website
 
