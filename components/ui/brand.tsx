@@ -106,12 +106,21 @@ export const metadata: Metadata = {
 		title: company.name,
 		description: company.description,
 		siteName: company.name,
+		images: [
+			{
+				url: "/settlewell-realty-og.png",
+				width: 1200,
+				height: 630,
+				alt: `${company.name} - ${company.tagline}`,
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: company.name,
 		description: company.description,
 		creator: `@${company.name.toLowerCase().replace(/\s/g, "")}`,
+		images: ["/settlewell-realty-og.png"],
 	},
 	robots: {
 		index: true,
