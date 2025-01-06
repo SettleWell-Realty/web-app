@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img src="/SettleWell-Realty-Logo.svg" alt="SettleWell Realty Logo" width="200"/>
+
+# SettleWell Realty Website
+
+A modern, performant marketing website for SettleWell Realty, a Denver-based property management and real estate brokerage.
+
+## Tech Stack
+
+- ⚡️ [Next.js 15](https://nextjs.org) - The React Framework for the Web
+- 🎨 [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+- ⚛️ [React 19](https://react.dev) - JavaScript library for user interfaces
+- 🎯 [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- 🎪 [shadcn/ui](https://ui.shadcn.com/) - Re-usable UI components
+- 📧 [Resend](https://resend.com) - Email delivery for form submissions
+- 🔍 [Biome](https://biomejs.dev/) - Fast linter and formatter
+
+## Key Features
+
+- 📱 Responsive design optimized for all devices
+- 🚀 Fast page loads with Next.js App Router
+- 📬 Contact form integration with Resend
+- 🎯 Property management service highlights
+- 📍 Denver area real estate focus
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository
+2. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+3. Start the development server:
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun dev        # Start development server
+bun build      # Create production build
+bun start      # Start production server
+bun clean      # Clean build artifacts
+bun lint       # Run Biome linter
+bun format     # Format code with Biome
+bun check      # Run all Biome checks
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+settlewell-realty/
+├── app/                # Next.js App Router pages and global styles (globals.css)
+├── components/         # React components
+├── lib/               # Utility functions
+└── public/            # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Styling:**
+- Styles are managed through Tailwind CSS
+- Global styles and theme configuration are defined in:
+  - `tailwind.config.ts` - Theme customization, colors, and design tokens
+  - `app/globals.css` - Base styles and CSS variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This site is deployed on [Vercel](https://vercel.com) and can be accessed at [settlewellrealty.com](https://settlewellrealty.com).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For inquiries about property management services:
+- 📧 [contact@settlewellrealty.com](mailto:contact@settlewellrealty.com)
+- 🌐 [settlewellrealty.com](https://settlewellrealty.com)
+
+## License
+
+Private - All Rights Reserved
