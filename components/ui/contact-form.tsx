@@ -1,5 +1,6 @@
 "use client";
 
+import { sendEmail } from "@/actions/email";
 import { Button } from "@/components/ui/button";
 import {
 	Dialog,
@@ -72,8 +73,12 @@ export function ContactDialog({ children }: ContactDialogProps) {
 	async function onSubmit(values: ContactFormData) {
 		try {
 			setIsSubmitting(true);
-			// Handle form submission here
-			console.log(values);
+
+			const result = await sendEmail(values);
+
+			if (!result.success) {
+				throw new Error(result.error);
+			}
 
 			toast({
 				title: "Message sent successfully!",
