@@ -1,16 +1,47 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
+import type { FC } from "react";
+
+// Define strict types for our data structures
+type CompanyInfo = {
+	readonly name: string;
+	readonly legalName: string;
+	readonly tagline: string;
+	readonly description: string;
+	readonly founding: number;
+	readonly domain: string;
+	readonly email: string;
+	readonly phone: string;
+};
+
+type LocationInfo = {
+	readonly street: string;
+	readonly suite: string;
+	readonly city: string;
+	readonly state: string;
+	readonly zip: string;
+	readonly country: string;
+	readonly full: string;
+	readonly cityState: string;
+};
+
+type SocialInfo = {
+	readonly facebook: string;
+	readonly instagram: string;
+	readonly linkedin: string;
+	readonly twitter: string;
+};
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
 	className?: string;
 	titleId?: string;
 }
 
-export function BrandIcon({
+export const BrandIcon: FC<IconProps> = ({
 	className,
 	titleId = "settlewell-icon",
 	...props
-}: IconProps) {
+}) => {
 	return (
 		<svg
 			width="200"
@@ -31,9 +62,21 @@ export function BrandIcon({
 			/>
 		</svg>
 	);
-}
+};
 
-const company = {
+// Helper function to create social media URLs
+const createSocialUrls = (companyName: string): SocialInfo => {
+	const normalizedName = companyName.toLowerCase().replace(/\s/g, "");
+	return {
+		facebook: `https://facebook.com/${normalizedName}`,
+		instagram: `https://instagram.com/${normalizedName}`,
+		linkedin: `https://linkedin.com/company/${normalizedName}`,
+		twitter: `https://twitter.com/${normalizedName}`,
+	};
+};
+
+// Define company information
+const company: CompanyInfo = {
 	name: "SettleWell Realty",
 	legalName: "SettleWell Realty LLC",
 	tagline: "Full-Service Realty & Property Management",
@@ -45,7 +88,8 @@ const company = {
 	phone: "(720) 555-0123", // TODO: Replace with actual phone number
 } as const;
 
-const location = {
+// Define location information
+const location: LocationInfo = {
 	street: "123 Market Street", // TODO: Replace with actual street address
 	suite: "Suite 200", // TODO: Replace with actual suite number
 	city: "Denver",
@@ -60,12 +104,7 @@ const location = {
 	},
 } as const;
 
-const social = {
-	facebook: `https://facebook.com/${company.name.toLowerCase().replace(/\s/g, "")}`,
-	instagram: `https://instagram.com/${company.name.toLowerCase().replace(/\s/g, "")}`,
-	linkedin: `https://linkedin.com/company/${company.name.toLowerCase().replace(/\s/g, "")}`,
-	twitter: `https://twitter.com/${company.name.toLowerCase().replace(/\s/g, "")}`,
-} as const;
+const social = createSocialUrls(company.name);
 
 const brand = {
 	colors: {
