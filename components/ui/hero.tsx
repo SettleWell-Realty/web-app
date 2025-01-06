@@ -34,19 +34,19 @@ const StarRating = () => (
 
 const testimonialAvatars = [
 	{
-		src: "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+		src: "/testimonial-avatar-01.avif",
 		alt: "Property Manager",
 	},
 	{
-		src: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e",
+		src: "/testimonial-avatar-02.avif",
 		alt: "Real Estate Agent",
 	},
 	{
-		src: "https://images.unsplash.com/photo-1556157382-97eda2d62296",
+		src: "/testimonial-avatar-03.avif",
 		alt: "Property Owner",
 	},
 	{
-		src: "https://images.unsplash.com/photo-1580489944761-15a19d654956",
+		src: "/testimonial-avatar-04.avif",
 		alt: "Client",
 	},
 ] as const;
@@ -54,9 +54,9 @@ const testimonialAvatars = [
 export function Hero() {
 	return (
 		<section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-			<div className="grid lg:grid-cols-[1fr,1.5fr] gap-5">
+			<div className="grid gap-5 lg:grid-cols-2 xl:grid-cols-2">
 				{/* Content Card */}
-				<div className="flex h-auto flex-col rounded-2xl bg-muted p-8">
+				<div className="flex h-auto flex-col rounded-2xl bg-muted p-8 lg:col-span-1 xl:col-span-1">
 					{/* Location Badge */}
 					<div className="inline-flex">
 						<div className="rounded-full bg-secondary px-3">
@@ -107,16 +107,15 @@ export function Hero() {
 				</div>
 
 				{/* Image Section */}
-				<div className="relative overflow-hidden rounded-2xl">
+				<div className="hidden lg:block relative overflow-hidden rounded-2xl bg-muted lg:col-span-1 xl:col-span-1 shadow-lg">
 					<Image
-						src="https://images.unsplash.com/photo-1560518883-ce09059eeffa"
-						alt="Modern apartment building"
-						className="object-cover"
+						src="/denver-co-backdrop.avif"
+						alt="Denver, CO"
+						className="object-cover hover:scale-105 transition-transform duration-500"
 						fill
 						sizes="(max-width: 768px) 100vw, 60vw"
 						priority
 					/>
-					<div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
 				</div>
 			</div>
 		</section>

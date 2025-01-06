@@ -102,11 +102,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
 	return (
 		<Dialog open={open} onOpenChange={setOpen}>
 			<DialogTrigger asChild>
-				{children || (
-					<Button className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
-						Contact Us
-					</Button>
-				)}
+				{children || <Button>Contact Us</Button>}
 			</DialogTrigger>
 			<DialogContent className="sm:max-w-[425px]">
 				<DialogHeader>

@@ -1,6 +1,6 @@
 import { Brand } from "@/components/ui/brand";
 import { ContactDialog } from "@/components/ui/contact-form";
-import { ModeToggle } from "@/components/ui/mode-toggle";
+import { OwnerPortalButton } from "@/components/ui/owner-portal-button";
 import Link from "next/link";
 
 export function Navbar() {
@@ -12,7 +12,7 @@ export function Navbar() {
 						href="/"
 						className="flex items-center gap-2.5 transition-colors group"
 					>
-						<div className="rounded-md bg-primary p-1.5 transition-colors group-hover:bg-primary/90">
+						<div className="rounded-md bg-primary p-1.5 transition-colors group-hover:bg-primary/90 shadow-md">
 							<Brand.icon className="h-5 w-5 text-primary-foreground" />
 						</div>
 						<span className="font-medium text-lg">{Brand.name}</span>
@@ -20,7 +20,7 @@ export function Navbar() {
 
 					<div className="flex items-center gap-4">
 						<ContactDialog />
-						<ModeToggle />
+						<OwnerPortalButton />
 					</div>
 				</nav>
 			</div>
