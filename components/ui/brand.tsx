@@ -12,6 +12,7 @@ type CompanyInfo = {
 	readonly domain: string;
 	readonly email: string;
 	readonly phone: string;
+	readonly licenseNumber: string;
 };
 
 type LocationInfo = {
@@ -86,6 +87,7 @@ const company: CompanyInfo = {
 	domain: "settlewellrealty.com",
 	email: "contact@settlewellrealty.com",
 	phone: "(720) 555-0123", // TODO: Replace with actual phone number
+	licenseNumber: "EC.XXXXX", // TODO: Replace with actual Colorado Real Estate License number
 } as const;
 
 // Define location information
